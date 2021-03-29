@@ -22,7 +22,6 @@ export class departmentGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    console.log(route);
     const id = +route.params.id;
     if (isNaN(id) || !(id === 1 || id === 2 || id === 3)) {
       alert('Invalid id');
